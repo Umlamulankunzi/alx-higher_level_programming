@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "list.h"
+#include "lists.h"
 
 
 /**
@@ -9,15 +9,15 @@
 */
 int check_cycle(listint_t *list)
 {
-	Node* slow = head;
-	Node* fast = head;
+	listint_t *slowpoke = list;
+	listint_t *speedster = list;
 
-	while (fast != NULL && fast->next != NULL)
+	while (speedster != NULL && speedster->next != NULL)
 	{
-		slow = slow->next;
-		fast = fast->next->next;
+		slowpoke = slowpoke->next;
+		speedster = speedster->next->next;
 
-		if (slow == fast)
+		if (slowpoke == speedster)
 		return (1);
 	}
 
