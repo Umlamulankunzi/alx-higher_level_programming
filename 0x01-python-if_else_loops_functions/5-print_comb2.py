@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 for val in range(100):
-	print("{val}".format(val=val), end="")
 	if val == 99:
-		print()
+		print("{val}".format(val=val))
 	else:
-		print(", ", end="")
+		print("{val}".format(val=val), end=", ")
