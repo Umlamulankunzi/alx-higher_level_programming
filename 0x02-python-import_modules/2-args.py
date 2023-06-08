@@ -9,7 +9,7 @@ def print_args():
         print("0 arguments.")
         return
 
-    text = "arguments" if num_args - 1 == 1 else "arguments"
+    text = "argument" if num_args - 1 == 1 else "arguments"
     print(f"{num_args - 1} {text}:")
 
     for ser, arg in enumerate(sys.argv[1:], 1):
