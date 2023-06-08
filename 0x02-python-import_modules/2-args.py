@@ -10,7 +10,7 @@ def print_args():
         return
 
     text = "arguments" if num_args - 1 == 1 else "arguments"
-    print(f"{num_args - 1} {text}")
+    print(f"{num_args - 1} {text}:")
 
     for ser, arg in enumerate(sys.argv[1:], 1):
         print(f"{ser}: {arg}")
