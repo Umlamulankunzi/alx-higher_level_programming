@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-ftom hidden_4 import *
+from hidden_4 import *
 
 
 if __name__ == "__main__":
