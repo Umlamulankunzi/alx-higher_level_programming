@@ -15,8 +15,7 @@ int is_palindrome(listint_t **head)
 	int index = 1, sec_head_index, mid_lst = size_list / 2;
 	int result;
 
-	// break list at centre and reverse it
-	sec_head_index = (size_list % 2 == 0)? mid_lst + 1 : mid_lst + 2;
+	sec_head_index = (size_list % 2 == 0) ? mid_lst + 1 : mid_lst + 2;
 
 	while (index != sec_head_index)
 	{
