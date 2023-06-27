@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+
+"""
+This module provides a class blueprint for a MagicClass object.
+"""
+
+
 import math
 
 
