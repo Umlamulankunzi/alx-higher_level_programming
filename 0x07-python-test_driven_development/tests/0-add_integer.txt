@@ -1,0 +1,60 @@
+Doctests for module ``0-add_integer``
+=====================================
+
+import module
+-------------------------------------
+>>> add_integer = __import__("0-add_integer").add_integer
+
+_____________________________________
+Test Case 1: pass one valid parameter
+-------------------------------------
+>>> add_integer(1)
+99
+
+_____________________________________
+Test Case 2: pass 2 integers
+-------------------------------------
+>>> add_integer(1, 5)
+6
+
+_____________________________________
+Test Case 3: pass 2 negative integers
+-------------------------------------
+>>> add_integer(-1, -5)
+-6
+
+_____________________________________
+Test Case 4: pass floats
+-------------------------------------
+>>> add_integer(5.5, 2.7)
+7
+
+_____________________________________
+Test Case 5: pass 2 negative floats
+-------------------------------------
+>>> add_integer(-5.5, -2.7)
+-7
+
+_____________________________________
+Test Case 5: pass 3 floats
+-------------------------------------
+>>> add_integer(-5.5, -2.7, 5.7)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+_____________________________________
+Test Case 6: pass invalid string arg
+-------------------------------------
+>>> add_integer("a")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+_____________________________________
+Test Case 7: pass one int and empty list
+-------------------------------------
+>>> add_integer(5, [])
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
