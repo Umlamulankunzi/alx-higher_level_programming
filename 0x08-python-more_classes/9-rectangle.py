@@ -115,7 +115,6 @@ class Rectangle:
 
         return rect_1 if rect_1.area() >= rect_2.area() else rect_2
 
-
     def __str__(self):
         """string representation of instance object
 
@@ -153,7 +152,7 @@ class Rectangle:
         """classmethod to return a new instance
 
         Args:
-            size (int, optional): width of new Rectangle instance. Defaults to 0.
+            size (int, optional): width of new instance. Defaults to 0.
 
         Returns:
             Rectangle: new instance of Rectangle with width==height==size

@@ -4,6 +4,7 @@
 Module defines a Rectangle Class
 """
 
+
 class Rectangle:
     """
     Empty Rectangle class
