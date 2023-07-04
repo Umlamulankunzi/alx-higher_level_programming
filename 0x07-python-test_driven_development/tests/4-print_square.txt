@@ -1,0 +1,89 @@
+Doctests for module ``04-print_square``
+=========================================
+
+import module
+-----------------------------------------
+>>> print_square = __import__('4-print_square').print_square
+
+_____________________________________
+Test Case 1: valid int
+-------------------------------------
+>>> print_square(5)
+#####
+#####
+#####
+#####
+#####
+
+_____________________________________
+Test Case 2: size = 0
+-------------------------------------
+>>> print_square(0)
+
+_____________________________________
+Test Case 3: size = 1
+-------------------------------------
+>>> print_square(1)
+#
+
+_____________________________________
+Test Case 4: size = 2
+-------------------------------------
+>>> print_square(2)
+##
+##
+
+_____________________________________
+Test Case 5: size = 3
+-------------------------------------
+>>> print_square(3)
+###
+###
+###
+
+_____________________________________
+Test Case 6: size = 2.5 (float)
+-------------------------------------
+>>> print_square(2.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+_____________________________________
+Test Case 7: size = 0.5 (float)
+-------------------------------------
+>>> print_square(0.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+_____________________________________
+Test Case 8: size = -1.5 (float)
+-------------------------------------
+>>> print_square(-1.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+_____________________________________
+Test Case 9: size = "hello"
+-------------------------------------
+>>> print_square("hello")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+_____________________________________
+Test Case 10: valid int
+-------------------------------------
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
