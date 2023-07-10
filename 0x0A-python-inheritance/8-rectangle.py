@@ -3,9 +3,9 @@
 
 """Defines a class Rectangle
 
-classes: 
-	BaseGeometry: imported from module "7-base_geomtry"
-	Rectangle: defined in module
+classes:
+    BaseGeometry: imported from module "7-base_geomtry"
+    Rectangle: defined in module
 """
 
 

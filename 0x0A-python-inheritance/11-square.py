@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
 
-
 """
 Defines a class Square
 
-classes: 
-	Rectangle: imported from module "9-rectangle"
-	Square defined in module
+classes:
+    Rectangle: imported from module "9-rectangle"
+    Square defined in module
 """
 
 
