@@ -1,0 +1,134 @@
+# Doctests f}r module ``1-my_list.py``mm
+============================================
+__________________________________________________
+Import function:
+    >>> MyList = __import__('1-my_list').MyList
+
+__________________________________________________
+Test 1: check if MyList is a subclass and instance of list.
+---------------------------------------------------------------------------------------
+
+    >>> my_list = MyList()
+    >>> issubclass(MyList, list)
+    True
+
+    >>> my_list = MyList()
+    >>> isinstance(my_list, list)
+    True
+
+__________________________________________________
+Test 2: check if 'print_sorted' is an attribute of class MyList.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> 'print_sorted' in dir(MyList)
+    True
+
+__________________________________________________
+Test 3: Test a MyList with positive numbers.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+__________________________________________________
+Test 4: Teat MyList with repeated numbers.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list += [1]
+    >>> my_list.append(2)
+    >>> my_list.append(2)
+    >>> my_list += [2]
+    >>> my_list.print_sorted()
+    [1, 1, 2, 2, 2]
+
+__________________________________________________
+Test 5: negative numbers.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append(-1)
+    >>> my_list.append(-4)
+    >>> my_list.append(-2)
+    >>> my_list.append(-3)
+    >>> my_list.append(-5)
+    >>> my_list.print_sorted()
+    [-5, -4, -3, -2, -1]
+
+__________________________________________________
+Test 6: positive and negative numbers.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(-2)
+    >>> my_list.append(3)
+    >>> my_list.append(-5)
+    >>> my_list.print_sorted()
+    [-5, -2, 1, 3, 4]
+
+__________________________________________________
+Test 7: MyList wth 1 number
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [5]
+
+__________________________________________________
+Test 8: MyList of positive string numbers.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append("1")
+    >>> my_list.append("4")
+    >>> my_list.append("2")
+    >>> my_list.append("3")
+    >>> my_list.append("5")
+    >>> my_list.print_sorted()
+    ['1', '2', '3', '4', '5']
+
+
+__________________________________________________
+Test 9: a list of positive and negative string numbers.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append("-1")
+    >>> my_list.append("4")
+    >>> my_list.append("-2")
+    >>> my_list.append("3")
+    >>> my_list.append("-5")
+    >>> my_list.print_sorted()
+    ['-1', '-2', '-5', '3', '4']
+
+__________________________________________________
+Test 10: list of positive characters.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.append('j')
+    >>> my_list.append('c')
+    >>> my_list.append('z')
+    >>> my_list.append('g')
+    >>> my_list.append('a')
+    >>> my_list.print_sorted()
+    ['a', 'c', 'g', 'j', 'z']
+
+__________________________________________________
+Test 11: empty list.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+__________________________________________________
+Test 12: Passing more than one argument to sort method.
+---------------------------------------------------------------------------------------
+    >>> my_list = MyList()
+    >>> my_list.print_sorted([1, 2])
+    Traceback (most recent call last):
+    	...
+    TypeError: print_sorted() takes 1 positional argument but 2 were given
+
