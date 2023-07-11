@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-    Module that define a class Student
+Module that define a class Student
 """
 
 
 class Student:
     """
         A class students that defines a student by:
-        
+
         Methods:
             __init__ - initializes the Student instance.
             to_json - retrieves dictionary repr of Student instance.
@@ -32,7 +32,8 @@ class Student:
         """
 
         if attr is not None:
-            dict_rep = {k: self.__dict__[k] for k in self.__dict__.keys() & attr}
+            dict_rep = {
+                    k: self.__dict__[k] for k in self.__dict__.keys() & attr}
             return dict_rep
         else:
             return self.__dict__

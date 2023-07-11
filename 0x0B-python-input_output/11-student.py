@@ -19,7 +19,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """Geta dict attribute of obj
-        
+
         Attributes:
             attrs (list): list of strings.
         """
