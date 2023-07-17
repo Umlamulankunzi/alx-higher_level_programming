@@ -46,7 +46,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-
     def __str__(self):
         info = {
             "id": self.id, "x": self.x, "y": self.y, "width": self.width,
