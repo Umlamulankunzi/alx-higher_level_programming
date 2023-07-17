@@ -28,7 +28,7 @@ class Rectangle(Base):
         self.y = y
 
     @staticmethod
-    def validate_int_arg(name: str, value: int):
+    def validate_int_arg(name, value):
         """validates instance attributes whether they are valid.
 
         Except for the id atrribute.
