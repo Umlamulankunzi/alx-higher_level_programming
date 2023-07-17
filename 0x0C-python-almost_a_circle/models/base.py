@@ -172,6 +172,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
+        """Methid to draw squares and rectangles using turtle"""
 
         # turtle.setup(width=800, height=600)
         turtle.penup()
