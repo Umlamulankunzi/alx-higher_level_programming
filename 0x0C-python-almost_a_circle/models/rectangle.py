@@ -166,6 +166,8 @@ class Rectangle(Base):
             "x": self.x, "y": self.y}
 
     def __str__(self):
+    """ string magic methid of class instance"""
+
         info = {
             "id": self.id, "x": self.x, "y": self.y, "width": self.width,
             "height": self.height
