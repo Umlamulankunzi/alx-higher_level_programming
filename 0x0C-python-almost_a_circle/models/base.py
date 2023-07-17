@@ -9,10 +9,16 @@ import turtle
 
 
 class Base:
+    """ Base class that is parent class"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """initialise new instanve if class
+
+        Args:
+            id (int): id of instance
+        """
         if id is not None:
             self.id = id
         else:
