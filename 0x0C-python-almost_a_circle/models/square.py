@@ -47,7 +47,7 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
-        """string magic nethod of instance"""
+        """string magic method of instance"""
 
         info = {
             "id": self.id, "x": self.x, "y": self.y, "width": self.width,
